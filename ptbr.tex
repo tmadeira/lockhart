@@ -1,12 +1,22 @@
 \documentclass[a4paper,oneside,12pt,notitlepage]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[portuges]{babel}
-\title{Lamentos de um Matemático}
-\author{Paul Lockhart}
-\date{} % isso elimina a data, que aqui não é relevante
+\usepackage{graphics}
+\usepackage{palatino}
+\usepackage{geometry}
+
+\geometry{paperwidth=210mm,paperheight=297mm,
+          textwidth=150mm,textheight=210mm,
+          top=30mm,bottom=30mm,
+          left=30mm,right=30mm}
 
 \frenchspacing
 \linespread{1.3}
+
+\title{Lamentos de um Matemático}
+\author{Paul Lockhart}
+\date{}
 
 \begin{document}
 
@@ -101,11 +111,17 @@ E é claro que se um estudante está planejando se formar numa ciência visual, 
 E quando os estudantes podem pintar livres, numa folha em branco?''
 
 ``Você parece um de meus professores!
-Eles sempre vem com essa de expressar os sentimentos e coisas desse tipo -- coisas abstratas que não têm realmente nada a ver.
-% correção: de "tem" para "têm".
+Eles sempre vem com essa de expressar os sentimentos e coisas desse tipo -- coisas abstratas que não tem realmente nada a ver.
+% As novas normas do português eliminaram o acento de têm :)
 Eu sou formado em Pintura e nunca trabalhei muito numa folha em branco.
 Eu apenas uso os kits Paint-by-Numbers distribuídos pelo conselho escolar''.
 % Convém revisar toda essa parte de pintura, não ficou muito boa.
+
+\vspace{1em}
+
+\begin{center}
+***
+\end{center}
 
 \vspace{1em}
 
@@ -120,7 +136,7 @@ Estão todos errados.
 As únicas pessoas que entendem o que está acontecendo são as que mais levam a culpa e são menos ouvidas: os alunos.
 Eles dizem, ``a aula de matemática é inútil e chata'', e têm razão. % deve haver uma palavra melhor para "inútil" nesse contexto.
 
-\textbf{Matemática e Cultura}
+\section*{Matemática e Cultura}
 
 A primeira coisa a entender é que matemática é uma arte.
 A diferença entre matemática e as outras artes, tais como música e pintura, é que nossa cultura não a reconhece como tal.
@@ -139,11 +155,10 @@ A matemática é a mais pura das artes, e também a menos compreendida.
 Então permitam-me tentar explicar o que é matemática, e o que os matemáticos fazem.
 Provavelmente a melhor maneira é começar com a excelente descrição de G. H. Hardy:
 
-% ajustar a formatação da citação:
-\begin{center}
- Um matemático, como um pintor ou poeta, é um criador de padrões.
+\begin{quote}
+Um matemático, como um pintor ou poeta, é um criador de padrões.
 Se seus padrões são mais permanentes que os deles, é porque são feitos com \textsl{ideias}.
-\end{center}
+\end{quote}
 
 Então matemáticos ficam fazendo padrões de ideias.
 Que tipo de padrões? Que tipo de ideias?
@@ -155,7 +170,9 @@ Matemáticos gostam de pensar sobre coisas as mais simples possíveis, e as cois
 
 Por exemplo, se eu estou afim de pensar sobre formas -- e eu normalmente estou -- posso pensar em um triângulo dentro de uma caixa retangular:
 
-% incluir figura
+\begin{center}
+\includegraphics{triangle0.eps}
+\end{center}
 
 Eu imagino quanto da caixa o triângulo ocupa.
 Dois terços, talvez?
@@ -189,7 +206,9 @@ O único jeito de saber a verdade sobre nossas criações imaginárias é usando
 
 No caso do triângulo em sua caixa, eu vejo algo simples e belo:
 
-% incluir figura
+\begin{center}
+\includegraphics{triangle1.eps}
+\end{center}
 
 Se eu dividir o retângulo em duas partes dessa forma, posso ver que cada parte é cortada diagonalmente ao meio pelos lados do triângulo.
 Então há tanto espaço dentro do triângulo quanto fora.
@@ -214,11 +233,21 @@ Não é isto a arte? % talvez melhor reescrever essa frase.
 Esta rica e fascinante aventura da imaginação foi reduzida a um conjunto estéril de ``fatos'' a serem memorizados e procedimentos a serem seguidos.
 Em vez de uma questão simples e natural sobre formas, e um criativo e compensador processo de invenção e descoberta, é isto que os alunos têm:
 
-\begin{center}
- \textbf{Fórmula da área do triângulo}\\
-$A=\frac12 b h$
-% incluir figura ao lado do texto
-\end{center}
+\vspace{1em}
+
+\begin{minipage}[c]{0.45\linewidth}
+	\centering
+	\textbf{Fórmula da área do triângulo}
+
+	$A=\frac12 b h$
+\end{minipage}
+\hspace{0.5em}
+\begin{minipage}[c]{0.45\linewidth}
+	\centering
+	\includegraphics{triangle2.eps}
+\end{minipage}
+
+\vspace{1em}
 
 ``A área de um triângulo é igual à base vezes a altura sobre dois.''
 É dito aos alunos que decorem esta fórmula e então a ``apliquem'' repetidamente nos ``exercícios''.
@@ -227,10 +256,6 @@ Não há mais nem um \textsl{problema}.
 A pergunta foi feita e respondida ao mesmo tempo -- não restou nada para o aluno fazer.
 
 % parei no início da página 5 do texto original 
-
-
-
-
 
 \end{document}
 
